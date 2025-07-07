@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Join Tech For Girls Community - Registration</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="hero-img">
+      <img src="https://placehold.co/800x400?text=Tech+For+Girls" alt="Welcome to Tech For Girls Community">
+    </div>
+    <div class="container">
+        <h1>Join Our Tech For Girls Community</h1>
+        <form id="registrationForm">
+            <div class="form-section">
+              <h2 class="form-header">Your Information</h2>
+              <div class="form-group">
+                <label for="name">Name:</label>
+                 <input type="text" id="name" required style="background-color: #fff9fa; border: 1px solid #ff69b4; padding: 10px; border-radius: 8px;">
+            </div>
+            <div class="form-group">
+                <label for="phone">Phone Number:</label>
+                <input type="number" id="phone" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email ID:</label>
+                <input type="email" id="email" required>
+            </div>
+            <div class="form-group">
+                <label for="college">College/Department:</label>
+                <input type="text" id="college" required>
+            </div>
+            <div class="form-group">
+                <label for="screenshot">Upload Your Photo/Resume:</label>
+                <p class="hint">(Max file size: 2MB - Accepts JPG, PNG or PDF)</p>
+                <input type="file" id="screenshot" accept="image/*,.pdf" required style="background-color: #ffebee; border: 1px dashed #ff69b4; padding: 8px; border-radius: 8px; width: 100%;">
+            </div>
+            <div class="share-card">
+              <p>Help us grow our community!</p>
+              <button type="button" id="whatsappButton" style="background: linear-gradient(135deg, #25d366, #128c7e); color: white; border: none; padding: 12px 20px; border-radius: 25px; font-weight: bold; cursor: pointer; font-size: 16px; box-shadow: 0 2px 5px rgba(0,0,0,0.2);">
+                <span class="icon">📢</span> Share on WhatsApp
+              </button>
+            </div>
+            <p id="clickCount" style="background-color: #ffebee; color: #c2185b; padding: 8px 15px; border-radius: 20px; display: inline-block; font-weight: bold; box-shadow: 0 2px 5px rgba(255,105,180,0.2);">Click count: 0/5</p>
+            <button type="submit" id="submitButton" class="submit-btn">Submit Registration</button>
+        </form>
+        <p id="submissionMessage" style="color: #c71585; background-color: #ffebf2; font-weight: bold; text-align: center; padding: 15px; border-radius: 8px; border-left: 4px solid #ff69b4; margin-top: 20px;"></p>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
